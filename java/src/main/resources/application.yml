@@ -1,0 +1,31 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: agent-knowledge-hub
+
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY:sk-your-key}
+      base-url: ${OPENAI_BASE_URL:https://api.openai.com/v1}
+      chat:
+        options:
+          model: gpt-4o
+          temperature: 0.0
+      embedding:
+        options:
+          model: text-embedding-3-small
+
+  kafka:
+    bootstrap-servers: ${KAFKA_SERVERS:localhost:9092}
+    consumer:
+      group-id: agenthub-java
+      auto-offset-reset: latest
+
+app:
+  neo4j:
+    uri: ${NEO4J_URI:bolt://localhost:7687}
+    user: ${NEO4J_USER:neo4j}
+    password: ${NEO4J_PASSWORD:password}
+  upload-dir: ./uploads
