@@ -254,7 +254,7 @@ CDC事件产生（通过Kafka或文件监听）
 ### 步骤1：克隆项目
 
 ```bash
-git clone https://github.com/bcefghj/agent-knowledge-hub.git
+git clone https://github.com/ffffff55/agent-knowledge-hub.git
 cd agent-knowledge-hub
 ```
 
@@ -708,7 +708,7 @@ go test ./...
 
 欢迎提 Issue 和 PR！
 
-- 发现 Bug？[提交 Issue](https://github.com/bcefghj/agent-knowledge-hub/issues)
+- 发现 Bug？[提交 Issue](https://github.com/ffffff55/agent-knowledge-hub/issues)
 - 想加新功能？欢迎 Fork 后提 PR
 - 觉得有帮助？请点个 ⭐ Star，这是对我最大的鼓励！
 
